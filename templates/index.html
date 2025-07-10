@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel Express - Professional Fuel Delivery</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Fuel Express</h1>
+      <nav>
+        <a href="{{ url_for('login') }}">Login</a>
+<a href="{{ url_for('signup') }}">Sign Up</a>
+<a href="{{ url_for('order') }}">Order Fuel</a>
+<a href="{{ url_for('track') }}">Track Order</a>
+<a href="{{ url_for('mechanicbooking') }}">Book Mechanic</a>
+
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>On-Demand Fuel Delivery, Anytime, Anywhere</h2>
+        <p>Hassle-free, safe, and quick fuel delivery at your convenience.</p>
+        <a href="{{ url_for('order') }}" class="btn">Order Now</a>
+      </div>
+    </section>
+
+    <section3 class="features">
+      <div class="feature-box">
+        <div class="feature-icon">🚀</div>
+        <h3>Fast Delivery</h3>
+        <p>Get fuel delivered to your location within minutes.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">🔒</div>
+        <h3>Secure & Safe</h3>
+        <p>Reliable service with quality fuel and secure payments.</p>
+      </div>
+      <div class="feature-box">
+        <div class="feature-icon">📞</div>
+        <h3>24/7 Customer Support</h3>
+        <p>We're here to assist you anytime, anywhere.</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Fuel Express. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
